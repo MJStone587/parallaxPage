@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  display: block;
+}
+.bgImg {
+  position: relative;
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.img1-caption {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+.bgImg1 {
+  background-image: url("/images/nightsky.jpg");
+  min-height: 100%;
+}
+.bgImg2 {
+  background-image: url("/images/camping.jpg");
+  min-height: 400px;
+}
+.bgImg3 {
+  background-image: url("/images/kidroom.jpg");
+  min-height: 400px;
+}
+.banner {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 75px;
+  opacity: 0.6;
+}
+.banner h3 {
+  /*clamp(Minimum, Preferred, Maximum); */
+  font-size: clamp(1.5rem, 2vw + 1.5rem, 3rem);
+}
+.banner p {
+  /*clamp(Minimum, Preferred, Maximum); */
+  font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
+}
+div,
+section {
+  display: block;
+  position: relative;
+}
+.img2-caption {
+  color: white;
+  padding: 18px;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 3px orangered;
+}
+.img3-caption {
+  color: white;
+  padding: 18px;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 3px rgb(232, 199, 99);
+}
+.img4-caption {
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  padding: 18px;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-shadow: 5px 5px 5px black, 5px 5px 5px black;
+}
